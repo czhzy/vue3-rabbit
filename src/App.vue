@@ -3,13 +3,20 @@
 </script>
 
 <template>
-<el-button type="primary">Primary</el-button>
+  <RouterView />
+  <div class="test">
+    scss
+  </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
 header {
   line-height: 1.5;
   max-height: 100vh;
+}
+
+.test {
+  color: $priceColor ;
 }
 
 .logo {
