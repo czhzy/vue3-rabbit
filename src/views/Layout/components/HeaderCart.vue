@@ -6,14 +6,14 @@ const cartStroe = useCartStore()
 
 <template>
   <div class="cart">
-    <a class="curr" href="javascript:;">
+    <a class="curr" href="javascript:;" @click="$router.push('/cartlist')">
       <i class="iconfont icon-cart"></i><em>{{ cartStroe.cartList.length }}</em>
     </a>
     <div class="layer">
       <div class="list">
         
         <div class="item" v-for="i in cartStroe.cartList" :key="i">
-          <RouterLink to="">
+          <RouterLink to="/">
             <img :src="i.picture" alt="" />
             <div class="center">
               <p class="name ellipsis-2">
